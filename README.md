@@ -18,6 +18,12 @@ I want to see people use this pattern. Second, I work on many Bevy projects,
 and would like to reduce the duplication of this code. Finally, I intend to publish more crates,
 so it doesn't hurt to get familiar with the process.
 
+## Compatibility
+
+| Bevy | `seldom_fn_plugin` |
+| ---- | ------------------ |
+| 0.8  | 0.1                |
+
 ## Examples
 
 Here is an example usage:
