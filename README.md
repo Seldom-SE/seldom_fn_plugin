@@ -1,7 +1,7 @@
 # `seldom_fn_plugin`
 
 [![Crates.io](https://img.shields.io/crates/v/seldom_fn_plugin.svg)](https://crates.io/crates/seldom_fn_plugin)
-[![MIT/Apache 2.0](https://img.shields.io/badge/license-MIT%2FApache-blue.svg)](https://github.com/bevyengine/bevy#license)
+[![MIT/Apache 2.0](https://img.shields.io/badge/license-MIT%2FApache-blue.svg)](https://github.com/Seldom-SE/seldom_fn_plugin#license)
 [![Crates.io](https://img.shields.io/crates/d/seldom_fn_plugin.svg)](https://crates.io/crates/seldom_fn_plugin)
 
 `seldom_fn_plugin` allows using Rust functions in place of Bevy plugins
