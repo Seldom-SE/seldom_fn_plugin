@@ -8,8 +8,9 @@
 without sacrificing the builder pattern. This improves the ergonomics of plugin-heavy apps
 and makes it possible to avoid certain `.clone()`s while maintaining modularity.
 
-I would advise against exposing a `fn_plugin` in a public API. It is better to keep consistent
-with the rest of the Bevy ecosystem in this case.
+I would advise against replacing Bevy plugins with `fn_plugin`s in a public API. It is better
+to keep consistent with the rest of the Bevy ecosystem in this case. However, you may expose both
+and just have the Bevy plugin add the `fn_plugin`.
 
 The code for this crate is only 10 lines, excluding docs and whitespace,
 so you can avoid adding a dependency by just copying the code into your project.
@@ -17,6 +18,17 @@ I decided to publish it despite its length for a few reasons. First,
 I want to see people use this pattern. Second, I work on many Bevy projects,
 and would like to reduce the duplication of this code. Finally, I intend to publish more crates,
 so it doesn't hurt to get familiar with the process.
+
+## Usage
+
+```toml
+# Replace * with your desired version
+
+[dependencies]
+seldom_fn_plugin = "*"
+```
+
+See the examples below for example usage.
 
 ## Compatibility
 
