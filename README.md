@@ -34,6 +34,7 @@ See the examples below for example usage.
 
 | Bevy | `seldom_fn_plugin` |
 | ---- | ------------------ |
+| 0.9  | 0.2                |
 | 0.8  | 0.1                |
 
 ## Examples
