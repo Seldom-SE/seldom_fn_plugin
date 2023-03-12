@@ -101,7 +101,7 @@ impl<D: PxAssetData> Plugin for PxAssetPlugin<D> {
     fn build(&self, app: &mut App) {
         app.add_asset::<PxAsset<D>>()
             .init_resource::<LoadingAssets<D>>()
-            .add_system_set(SystemSet::on_update(PaletteState::Loaded).with_system(D::load));
+            .add_system(D::load.in_set(PxSet::LoadAssets));
     }
 }
 
@@ -125,7 +125,7 @@ pub(crate) fn asset_plugin(app: &mut App) {
 fn px_asset_plugin<D: PxAssetData>(app: &mut App) {
     app.add_asset::<PxAsset<D>>()
         .init_resource::<LoadingAssets<D>>()
-        .add_system_set(SystemSet::on_update(PaletteState::Loaded).with_system(D::load));
+        .add_system(D::load.in_set(PxSet::LoadAssets));
 }
 ```
 
