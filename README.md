@@ -1,3 +1,13 @@
+## NOTE
+
+As of Bevy 0.13, types implementing `Fn(&mut App)` automatically implement `Plugin` now! For most
+cases, I recommend using that functionality. However, this can't be used to avoid cloning (see
+the last example in this README), so this crate is still useful for that use case. But, that's
+not enough use to justify this crate (personally, I only ran into the cloning problem once), so
+I won't update this crate for Bevy 0.14. So, if you still prefer this pattern, copy the source
+code into your project! I'm pretty proud that this crate reached 10k downloads! That's 1,000
+downloads per line of Rust code, excluding comments and whitespace, which is pretty extreme.
+
 # `seldom_fn_plugin`
 
 [![Crates.io](https://img.shields.io/crates/v/seldom_fn_plugin.svg)](https://crates.io/crates/seldom_fn_plugin)
